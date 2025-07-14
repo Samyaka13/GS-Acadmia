@@ -12,7 +12,7 @@
 >
 > #### Frontend Live at - [Click Here](https://gs-acadmia-frontend.vercel.app/)
 >
-> #### Backend Live at - [Click Here](https://test-gs-backend.onrender.com/)
+> #### Backend Live at - [Click Here](https://gs-acadmia-backend.onrender.com/)
 
 ## Usage
 
