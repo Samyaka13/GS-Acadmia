@@ -6,15 +6,15 @@
 
 ## Links
 
-> #### Full Stack GitHub Repo - [Click Here]()
+> #### Full Stack GitHub Repo - [Click Here](https://github.com/Samyaka13/GS-Acadmia)
 >
-> #### Frontend GitHub Repo - [Click Here](https://github.com/parth5404/TEST-GS-Frontend)
+> #### Frontend GitHub Repo - [Click Here](https://github.com/Samyaka13/GS-Acadmia-Frontend)
 >
-> #### Backend GitHub Repo - [Click Here](https://github.com/parth5404/TEST-GS-Backend)
+> #### Backend GitHub Repo - [Click Here](https://github.com/Samyaka13/GS-Acadmia-Backend)
 >
 > #### Frontend Live at - [https://gsacademia-parth-lahotis-projects.vercel.app/](https://gsacademia-parth-lahotis-projects.vercel.app/)
 >
-> #### Backend Live at - [https://test-gs-backend.onrender.com/](https://test-gs-backend.onrender.com/)
+> #### Backend Live at - [Click Here](https://gs-acadmia-backend.onrender.com/)
 
 ## Usage
 
@@ -22,8 +22,7 @@
 
 
 
-The Website is live at ( on Vercel ) - [GS Acdemia](https://gsacademia-parth-lahotis-projects.vercel.app/)
+The Website is live at ( on Vercel ) - [GS Acdemia](https://gs-acadmia-backend.onrender.com/)
 
 - Version - 1.0.0
-- License: parth5404
-- Author: Parth Lahoti
+

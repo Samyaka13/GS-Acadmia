@@ -34,7 +34,7 @@ const Footer = () => {
               </Link>
               <FooterCard data={footerLinks[0]} />
               <div className='flex gap-3 text-lg text-richblack-400 -mt-5'>
-                <Link to={'https://www.linkedin.com/in/parth-lahoti/'} ><FaLinkedin /></Link>
+                <Link to={'https://www.linkedin.com/in/samyak-ajmera/'} ><FaLinkedin /></Link>
                 <Link to={'https://twitter.com/'} ><FaTwitter /></Link>
                 <Link to={'https://www.youtube.com/'} ><FaYoutube /></Link>
                 <Link to={'https://www.facebook.com/'} ><FaFacebook /></Link>
@@ -84,7 +84,7 @@ const Footer = () => {
 
 
           <div className='text-center' >
-            Made with ❤️ by Parth Lahoti
+            Made with ❤️ by Samyak Ajmera
           </div>
         </div>
       </div>
