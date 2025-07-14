@@ -10,9 +10,9 @@
 >
 > #### Backend GitHub Repo - [Click Here](https://github.com/Samyaka13/GS-Acadmia-Backend)
 >
-> #### Frontend Live at - [https://gs-acadmia-frontend.vercel.app/]()
+> #### Frontend Live at - [Click Here](https://gs-acadmia-frontend.vercel.app/)
 >
-> #### Backend Live at - [https://test-gs-backend.onrender.com/]()
+> #### Backend Live at - [Click Here](https://test-gs-backend.onrender.com/)
 
 ## Usage
 
