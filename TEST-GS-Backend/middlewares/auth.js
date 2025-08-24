@@ -5,7 +5,6 @@ const dotenv=require("dotenv").config();
 exports.protect = async (req, res, next) => {
   try {
     // TODO : test which is better
-    // const token = req.cookie.token || req.header("Authorization").replace("Bearer ", "");
     const token = req.cookies?.token || req.headers?.authorization?.replace('Bearer ', '');
 
     if (!token) {

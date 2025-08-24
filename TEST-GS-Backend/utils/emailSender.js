@@ -12,7 +12,7 @@ const emailSender = async (toEmail, subject, body) => {
       },
     });
 
-    // // For testing / development purpose
+    // For testing / development purpose
     // const transporter = nodemailer.createTransport({
     //   host: process.env.SMTP_HOST,
     //   port: process.env.SMTP_PORT,

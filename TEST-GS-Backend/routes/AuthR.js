@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
+
+//importing middlewares
 const { protect, authorize, isSiteOwner } = require('../middlewares/auth');
 
-// import controllers
+// importing controllers
 const { sendOtp, signup, login, logOut, getMe, changePassword, forgotPassword, resetPassword, createAdmin } = require('../controllers/AuthC');
 
 router.post('/sendotp', sendOtp);
