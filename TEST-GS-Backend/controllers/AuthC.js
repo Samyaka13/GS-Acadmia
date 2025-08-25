@@ -194,7 +194,7 @@ exports.getMe = async (req, res, next) => {
 // @access    Private  // VERIFIED
 exports.changePassword = async (req, res, next) => {
   try {
-    let user = await User.findById(req.user.id).select("+password");
+    let user = await User.findById(req.user.id).select("+password"); //this select explictly includes the password from the user that we have prevented from selecting while calling from schema
     const { oldPassword, newPassword } = req.body;
 
     if (!(await bcrypt.compare(oldPassword, user.password))) {
@@ -424,13 +424,17 @@ const sendTokenResponse = (res, user, statusCode) => {
     expires: new Date(
       Date.now() + process.env.JWT_COOKIE_EXPIRE * 24 * 60 * 60 * 1000
     ),
-    httpOnly: true,
+    httpOnly: true, // this httpOnly secures the cookie on client's machine
+    //this makes the cookie inaccessible to client side javascript
+    //it helps us to prevent cross site  scripting(XSS) attack
   };
 
+  //this secure attribute secures the cooki during the transit
   if (process.env.NODE_ENV === "production") {
-    options.secure = true;
+    options.secure = true; //secure is one of the attribute provided by the cookie if it is true it means you are only allowed to send me cookie if the connection is encrypted (that is https)
+    //now it is true only when dev is production that means on devlopment it is false and the cookie will be sent to http on development
   }
-
+  //Here I am sending cookie both as cookie and json (json for mobile applications and cookie for browser use)
   res.cookie("token", token, options).status(statusCode).json({
     success: true,
     user,

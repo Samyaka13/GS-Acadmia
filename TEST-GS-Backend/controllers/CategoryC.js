@@ -20,7 +20,7 @@ exports.getAllCategories = async (req, res, next) => {
 };
 
 // @desc      Get all courses of a category [+ other courses + top 10 selling courses]
-// @route     GET /api/v1/categories/getcategorycourses/:categoryId
+// @route     POST /api/v1/categories/getcategorycourses/:categoryId
 // @access    Public // VERIFIED
 exports.getAllCategoryCourses = async (req, res, next) => {
   try {
@@ -39,7 +39,7 @@ exports.getAllCategoryCourses = async (req, res, next) => {
             path: 'instructor',
           },
         })
-        .exec();
+        .exec();//this is just used for better understanding and code readability 
 
       requestedCategory = {
         name: reqCat.name,
@@ -57,7 +57,9 @@ exports.getAllCategoryCourses = async (req, res, next) => {
     // Get courses for other categories
     const categoriesExceptRequested = await Category.find({ _id: { $ne: categoryId } });
 
-    const otherCategoryCourses = await Category.findById(categoriesExceptRequested[getRandomInt(categoriesExceptRequested.length)]._id).populate({
+    const otherCategoryCourses = await Category.findById
+    (categoriesExceptRequested[getRandomInt(categoriesExceptRequested.length)]._id)
+    .populate({
       path: 'courses',
       match: { status: 'Published' },
       populate: {

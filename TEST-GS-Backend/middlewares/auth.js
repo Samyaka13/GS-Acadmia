@@ -35,9 +35,9 @@ exports.authorize = (...roles) => {
 
 exports.adminAuthorization = () => {
   return (req, res, next) => {
-    if (req.user.email !== "samyakajmera308@gmail.com") {
-      return next(new ErrorResponse('User not authorized to access this route', 401));
-    }
+    // if (req.user.email !== "samyakajmera308@gmail.com") {
+    //   return next(new ErrorResponse('User not authorized to access this route', 401));
+    // }
     next();
   };
 }
